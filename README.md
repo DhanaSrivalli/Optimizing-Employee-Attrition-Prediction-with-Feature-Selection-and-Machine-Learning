@@ -5,6 +5,7 @@
 - [Aim of the Project](#aim-of-the-project)
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
+- [Features](#features)
 - 
 #### Aim of the Project <a name="aim-of-the-project"></a>
 This study seeks to investigate the effect of feature selection approaches on the effectiveness of machine learning models for forecasting employee attrition. The study uses L1 regularization and Recursive Feature Elimination (RFE) to find the most relevant elements affecting turnover and improve model accuracy.
@@ -17,3 +18,21 @@ This research data was sourced from Kaggle IBM HR Analytics Employee Attrition (
 "https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset"
 
 The data collection contains 1,470 records of employee information, with 35 parameters such as age, work satisfaction, performance rating, monthly pay, years with the company, and attrition (staff turnover). The data collection includes both qualitative and numerical characteristics, such as employee details, experience, and remuneration, which can be utilized to build predictive models. Surprisingly, the last column, called "Attrition", is the answer variable that indicates whether or not the employee left. 
+Format: CSV
+Size: 1,470 records with 35 features, including demographic, professional, and performance-related data.
+Target Variable: Attrition (indicates whether an employee left the organization).
+
+#### Features <a name="features"></a>
+>* Implements feature selection techniques:
+- L1 Regularization (Lasso)
+- Recursive Feature Elimination (RFE)
+- Union and Intersection of L1 and RFE
+>* Machine learning models used:
+- Gradient Boosting (GB)
+- Extreme Gradient Boosting (XGB)
+- Histogram-Based Gradient Boosting (HGB)
+- Decision Tree (DT)
+- Multi-Layer Perceptron (MLP)
+>* Comprehensive evaluation metrics:
+Accuracy, Precision, Recall, F1 Score, False Positive Rate (FPR), False Negative Rate (FNR)
+Balances imbalanced datasets using SMOTE.
