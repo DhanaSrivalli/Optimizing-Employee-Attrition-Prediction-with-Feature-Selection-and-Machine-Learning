@@ -36,3 +36,29 @@ Target Variable: Attrition (indicates whether an employee left the organization)
 >* Comprehensive evaluation metrics:
 Accuracy, Precision, Recall, F1 Score, False Positive Rate (FPR), False Negative Rate (FNR)
 Balances imbalanced datasets using SMOTE.
+
+Preprocessing:
+
+Cleans the dataset by removing redundant features and handling missing values.
+Encodes categorical variables and balances the dataset using SMOTE.
+Feature Selection:
+
+Applies L1, RFE, Union, and Intersection to identify key features.
+Training Models:
+
+Trains GB, XGB, HGB, DT, and MLP on both full and feature-selected datasets.
+Evaluation:
+
+Compares models using metrics like accuracy, F1 score, and confusion matrices.
+Visualization:
+
+Visualizes learning curves, performance metrics, and feature importance.
+
+Results
+Best Models:
+HGB and XGB: Achieved the highest accuracy of 91% on the original dataset with 32 features.
+Feature Selection Observations:
+Union of L1 and RFE (29 features) provided the best balance between performance and dimensionality reduction.
+Intersection of L1 and RFE (11 features) negatively impacted model accuracy.
+Key Metrics:
+XGB and HGB maintained low FPR and FNR, ensuring high reliability in predicting employee turnover.
